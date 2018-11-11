@@ -4,7 +4,6 @@ language: python
 python:
   - "2.7"
   - "3.6"
-  - "3.5"
 before_install:
   - sudo apt-get install -y python-dev python-pip python-virtualenv pkg-config
 install:
@@ -23,4 +22,5 @@ install:
   - source activate test-environment
   - pip install Cython --install-option="--no-cython-compile"
   - pip install -e .[tests]
-script:  py.test --pep8 -m pep8 
+script:  py.test --pep8 -m pep8
+
